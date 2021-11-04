@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.footer {
+    width: 100%;
+    background-color: rgba(82, 75, 75, 0.4);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin: 0%;
+    font-size: large;
+}
+
+.footer__row--gioithieu {
+    width: 30%;
+    margin-left: 10px;
+}
+
+.footer__row--thongtin {
+    width: 35%;
+    margin-left: 160px;
+}
+
+.footer__row--lienhe {
+    width: 35%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        width: 450px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__row--gioithieu {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .footer__row--thongtin {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .footer__row--lienhe {
+        width: 100%;
+        margin: 0px auto;
+    }
+    ul {
+        display: flex;
+        text-align: center;
+        margin-left: 190px;
+    }
+}
