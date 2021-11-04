@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../Final_Project_EPTRAVEL/assets/css/login.css" />
+    <script type="password" src="../Final_Project_EPTRAVEL/assets/js/login.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container-title">
+            <img src="../Final_Project_EPTRAVEL/assets/images/icons/logo.png" alt="Không hiển thị" id="logo">
+            <img src="../Final_Project_EPTRAVEL/assets/images/icons/sd.png" alt="Không hiển thị" id="sd">
+        </div>
+        <div class="login-container-form">
+            <form action="">
+                <div class="login-container-form-row">
+                    <h1>Đăng ký:</h1>
+                    <h6>Đăng nhập bằng google</h6>
+                </div>
+                <div class="login-container-form-row">
+                    <label for="">Tài khoản: </label><span>*</span> <br>
+                    <input type="text" name="email" id="email" placeholder="email@gmail.com" required>
+                </div>
+                <div class="login-container-form-row">
+                    <label for="">Mật khẩu: </label><span>*</span>
+                    <div class="password">
+                        <input type="password" name="pass" id="pass" placeholder="*********" required>
+                        <button type="button" onclick="showAndHidden(), changeIcon()" id="iconeye"><img src="../Final_Project_EPTRAVEL/assets/images/icons/iconeye.png" alt="bake"
+                           id="eyeHidden" ></button>
+                    </div>
+                </div>
+                <div class="login-container-form-row">
+                    <label for="">Nhập lại mật khẩu: </label><span>*</span> <br>
+                    <input type="password" name="pass" id="re-pass" placeholder="*********" required>
+                </div>
+                <div class="login-container-form-row register-button">
+                    <button id="register">Tạo tài khoản</button>
+                    <button id="login" onclick="location.href='Dangnhap.html';">Đăng nhập</button>
+                </div>
+                <div class="login-other-account"><span>hoặc đăng nhập với <a href="">Tài khoản</a> </span> </div>
+                <div class="login-container-form-row help"><a href="">Help</a> </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

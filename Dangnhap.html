@@ -5,11 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="../Final_Project_EPTRAVEL/assets/css/login.css" />
+    <script type="password" src="../Final_Project_EPTRAVEL/assets/js/login.js"></script>
 </head>
 
 <body>
-    
+    <div class="container">
+        <div class="login-container-title">
+            <img src="../Final_Project_EPTRAVEL/assets/images/icons/logo.png" alt="Không hiển thị" id="logo">
+            <img src="../Final_Project_EPTRAVEL/assets/images/icons/sd.png" alt="Không hiển thị" id="sd">
+        </div>
+        <div class="login-container-form">
+            <form action="">
+                <div class="login-container-form-row">
+                    <h1>Đăng ký:</h1>
+                    <h6>Đăng nhập bằng google</h6>
+                </div>
+                <div class="login-container-form-row">
+                    <label for="">Tài khoản: </label><span>*</span> <br>
+                    <input type="text" name="email" id="email" placeholder="email@gmail.com" required>
+                </div>
+                <div class="login-container-form-row">
+                    <div class="lose-pass">
+                        <div>
+                            <label for="">Mật khẩu: </label><span id="star" >*</span>
+                        </div>
+                        <div>
+                            <a href="">Quên mật khẩu</a>
+                        </div>
+                    </div>
+                    <div class="password">
+                        <input type="password" name="pass" id="pass" placeholder="*********" required>
+                        <button type="button" onclick="showAndHidden(), changeIcon()" id="iconeye"><img src="../Final_Project_EPTRAVEL/assets/images/icons/iconeye.png" alt="bake"
+                            id="eyeHidden"    ></button>
+                    </div>
+                </div>
+                <div class="login-container-form-row login-button">
+                    <button id="login">Đăng nhập</button>
+                </div>
+                <div class="login-container-form-row create-account">
+                    <p>Bạn đã có tài khoản</p>
+                    <a href="Dangky.html">Tạo tài khoản mới</a>
+                </div>
+                <div class="login-other-account"><span>Hoặc đăng nhập bằng</span> </div>
+                <div class="login-other-account__icon">
+                    <a href="" id="google"><img class="icon"
+                            src="../Final_Project_EPTRAVEL/assets/images/icons/google.png" alt="Google"></a>
+                    <a href="" id="Facebook"><img class="icon"
+                            src="../Final_Project_EPTRAVEL/assets/images/icons/facebook-blue.png" alt="Facebook"></a>
+                    <a href="" id="twitter"><img class="icon"
+                            src="../Final_Project_EPTRAVEL/assets/images/icons/twitter.png" alt=""></a>
+                </div>
+                <div class="login-container-form-row help"><a href="">Help</a> </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
