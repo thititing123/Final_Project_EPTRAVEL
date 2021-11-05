@@ -54,49 +54,36 @@ html{
 #iconeye{
     border: 0;
     height: 100%;
-    background-color: #fff;
+    background-image: url(../images/icons/iconeye.png);
+    background-size: cover;
 }
 #iconeye:hover, button:hover{
     cursor: pointer;
     
 }
-.login-container-form-row{
-   margin: 15px 30px;
+.login-container-form-row__title{
+    margin: 12px 30px;
 }
-.login-container-form-row>h6{
+.login-container-form-row__title>h6{
     color: gray;
 }
+.login-container-form-row{
+   margin: 20px 30px;
+}
+
 .login-container-form-row>span, #star{
     color: red;
     font-weight: bold;
 }
 .login-container-form-row>input{
     width: 100%;
-    height: 35px;
+    height: 38px;
     padding: 8px;
     border: 2px solid #6e787f;
     border-radius: 10px;
+    margin-top: 5px;
 }
-.password{
-    position: relative;
-    width: 100%;
-    height: 35px;
-    border: 2px solid #6e787f;
-    border-radius: 10px;
-    background-color: #ffff;
-}
-.password>button{
-    position: absolute;
-    padding: 5px 5px;
-}
-#pass{
-    border: 0;
-    width: 90%;
-    height: 98%;
-    position: relative;   
-    padding: 8px;
-    border-radius: 10px 0 0 10px;
-}
+
 #lose-pass{
     align-items: right;
 }
@@ -129,13 +116,13 @@ html{
     font-size: larger;
     height: 35px;
 }
-.login-other-account{
+.login-another-account{
     text-align: center;
     color: grey;
     margin: 10px auto;
     position: relative;
 }
-.login-other-account:after{
+.login-another-account:after{
     content: "";
     width: 70%;
     height: 1px;
@@ -144,7 +131,7 @@ html{
     top: 50%;
     left: 15%;
 }
-.login-other-account>span{
+.login-another-account>span{
     display: inline-block;
     padding: 10px 2px;
     font-size: 10px;
@@ -154,10 +141,8 @@ html{
 }
 .help{
     text-align: right;
-    font-size: 10px;
-}
-.login-other-account__icon{
-    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
 }
 
 .lose-pass{
@@ -176,8 +161,28 @@ html{
 .create-account>a{
     font-size: smaller;
 }
+.login-another-account__icon{
+    display: flex;
+    justify-content: center;
+}
+.login-another-account__icon>div{
+    border: 1px solid #ffff;
+    margin: 0 5px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    /* line-height: 40px; */
+    border-radius: 50%;
+    background-color: #ffff;
+    text-align: center;
+    box-shadow: 3px 2px 2px black;
+}
 .icon{
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+}
+.google{
+    margin-top: 1px;
+    height: 35px;
+    width: 35px;
 }
